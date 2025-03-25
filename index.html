@@ -1,0 +1,39 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+  <title>Live Local Time</title>  
+  <style>  
+    body {  
+      text-align: center;  
+      font-family: Arial, sans-serif;  
+      margin: 50px;  
+    }  
+    #local-time {  
+      font-size: 4em;  
+      color: #333;  
+    }  
+  </style>  
+</head>  
+<body>  
+  <h1>Current Local Time</h1>  
+  <div id="local-time"></div>  
+
+  <!-- Affiliate Link Placeholder -->  
+  <p>Sponsored by: <a href="https://sovrn.co/jrd3t84" target="_blank">Example Product</a></p>  
+
+  <script>  
+    function updateTime() {  
+      const date = new Date();  
+      const timeString = date.toLocaleTimeString('en-US', {  
+        hour: 'numeric',  
+        minute: '2-digit',  
+        second: '2-digit',  
+        hour12: true  
+      });  
+      document.getElementById('local-time').innerHTML = timeString;  
+    }  
+    setInterval(updateTime, 1000);  
+    updateTime();  
+  </script>  
+</body>  
+</html>  
