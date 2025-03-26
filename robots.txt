@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://calm-maamoul-37a295.netlify.app/sitemap.xml
