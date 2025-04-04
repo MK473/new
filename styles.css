@@ -186,3 +186,36 @@ footer a:hover {
         margin: 1rem 0;
     }
 }
+
+/* Add to existing styles */
+.time-display {
+    font-size: 2rem;
+    margin: 1rem 0;
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+.timezone-id {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.remove-btn {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    background: transparent;
+    color: var(--accent-color);
+    padding: 0.2rem 0.5rem;
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+.remove-btn:hover {
+    background: rgba(231, 76, 60, 0.1);
+}
+
+.time-card {
+    position: relative;
+    padding: 2rem 1.5rem;
+}
