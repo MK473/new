@@ -1,94 +1,83 @@
-<!DOCTYPE html>  
-<html lang="en">  
-<head> 
-<!-- Start cookieyes banner --> <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/5d48d821746a35e77b6ad23e/script.js"></script> <!-- End cookieyes banner -->
-<script type="application/ld+json">  
-{  
-  "@context": "https://schema.org",  
-  "@type": "WebApplication",  
-  "name": "Live Local Time Widget",  
-  "description": "Track real-time local time instantly.",  
-  "url": "https://calm-maamoul-37a295.netlify.app/",  
-  "applicationCategory": "Utility"  
-}  
-</script>  
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-GG6CW2JWR0"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
- gtag("consent", "default", {
-        ad_storage: "denied",
-        ad_user_data: "denied", 
-        ad_personalization: "denied",
-        analytics_storage: "denied",
-        functionality_storage: "denied",
-        personalization_storage: "denied",
-        security_storage: "granted",
-        wait_for_update: 2000,
-    });
-    gtag("set", "ads_data_redaction", true);
-    gtag("set", "url_passthrough", true);
-</script>
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-KGKR4B9H');</script>
-<!-- End Google Tag Manager -->
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Free live local time widget. Track real-time local time instantly. No signup required. Mobile-friendly and simple. Use anytime.">  
-<meta name="keywords" content="live local time, current time widget, real-time clock, free time checker"> 
-<meta name="google-site-verification" content="jJYKF8HyyCnTv6KtT4QPFjzdfRX8H_urbdZUHoRbaJo" />
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1143819748581895"
-     crossorigin="anonymous"></script>
-  <title>Live Local Time Widget</title>  
-  <link rel="canonical" href="https://calm-maamoul-37a295.netlify.app/" />
-<script src="https://cdn-cookieyes.com/client_data/XXXXXXX.js"></script> 
- <style>  
-    body {  
-      text-align: center;  
-      font-family: Arial, sans-serif;  
-      margin: 50px;  
-    }  
-    #local-time {  
-      font-size: 4em;  
-      color: #333;  
-    }  
-  </style> 
-<script async src="https://fundingchoicesmessages.google.com/i/pub-1143819748581895?ers=1"></script><script>(function() {function signalGooglefcPresent() {if (!window.frames['googlefcPresent']) {if (document.body) {const iframe = document.createElement('iframe'); iframe.style = 'width: 0; height: 0; border: none; z-index: -1000; left: -1000px; top: -1000px;'; iframe.style.display = 'none'; iframe.name = 'googlefcPresent'; document.body.appendChild(iframe);} else {setTimeout(signalGooglefcPresent, 0);}}}signalGooglefcPresent();})();</script>
-</head>  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Time Zone Converter - Instant Global Time Check</title>
+    <meta name="description" content="Free instant time zone converter tool for travelers, remote workers, and international business">
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1143819748581895"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GTM-KGKR4B9H"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GTM-KGKR4B9H');
+    </script>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }
+        .cookie-banner { position: fixed; bottom: 0; left: 0; right: 0; background: #333; color: white; padding: 10px; text-align: center; }
+        .cookie-banner button { background: #4CAF50; color: white; border: none; padding: 5px 10px; margin-left: 10px; }
+    </style>
+</head>
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KGKR4B9H"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->  
-  <h1>Current Local Time</h1>  
-<p>Track real-time local time with this free, simple clock widget.</p>  
-  <div id="local-time"></div>  
-
-  <script>  
-    function updateTime() {  
-      const date = new Date();  
-      const timeString = date.toLocaleTimeString('en-US', {  
-        hour: 'numeric',  
-        minute: '2-digit',  
-        second: '2-digit',  
-        hour12: true  
-      });  
-      document.getElementById('local-time').innerHTML = timeString;  
-    }  
-    setInterval(updateTime, 1000);  
-    updateTime();  
-  </script>  
+    <h1>World Time Zone Converter</h1>
+    <p>Select your time zones below to compare:</p>
+    
+    <!-- Simple Time Converter Tool -->
+    <div id="time-converter">
+        <select id="timezone1">
+            <option value="-12">UTC-12:00</option>
+            <!-- Add all time zones -->
+        </select>
+        <select id="timezone2">
+            <option value="0">UTC+00:00</option>
+            <!-- Add all time zones -->
+        </select>
+        <button onclick="convertTime()">Convert</button>
+        <div id="result"></div>
+    </div>
+    
+    <!-- AdSense Units -->
+    <div style="margin: 20px 0;">
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-YOUR_ADSENSE_ID"
+             data-ad-slot="YOUR_AD_SLOT"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+    
+    <!-- Cookie Consent -->
+    <div id="cookie-banner" class="cookie-banner" style="display: none;">
+        This site uses cookies to improve your experience. 
+        <button onclick="acceptCookies()">Accept</button>
+    </div>
+    
+    <!-- Privacy Policy Link -->
+    <footer style="margin-top: 50px;">
+        <a href="/privacy.html">Privacy Policy</a>
+    </footer>
+    
+    <script>
+        // Simple Time Conversion Logic
+        function convertTime() {
+            // Add your time conversion JavaScript here
+            document.getElementById('result').innerHTML = "Conversion result will appear here";
+        }
+        
+        // Cookie Consent
+        if (document.cookie.indexOf("cookieConsent=true") === -1) {
+            document.getElementById('cookie-banner').style.display = 'block';
+        }
+        function acceptCookies() {
+            document.cookie = "cookieConsent=true; max-age=31536000; path=/";
+            document.getElementById('cookie-banner').style.display = 'none';
+        }
+    </script>
 </body>
-<!-- Header Ad -->  
-<div class="ad-banner" style="height: 90px; margin: 20px auto;"></div>  
-<!-- Footer Ad -->  
-<div class="ad-banner" style="height: 250px; margin: 20px auto;"></div>  
-<footer>  
-  <a href="/privacy.html">Privacy Policy</a>  
-</footer>    
-</html>  
+</html>
